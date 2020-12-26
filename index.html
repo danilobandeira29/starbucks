@@ -3,34 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
   <title>Starbucks</title>
 </head>
 <body>
-  <header>
-    <img src="./assets/logo.png" alt="Starbucks logo" />
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Media</li>
-        <li>Contact</li>
-        <li>About us</li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <article>
-      <h1>It's not just Coffee, it's Starbucks</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam, tempora quod officiis atque saepe excepturi. Sunt architecto molestias omnis voluptates dolores, eveniet velit accusantium tempora alias nisi? Necessitatibus aliquam asperiores non, molestias provident facilis fugit ratione quo aut cum?</p>
-    </article>
-    <section>
-      <img src="./assets/img1.png" alt="Starbucks product"/>
-      <div>
-        <img src="./assets/thumb1.png" alt="Thumb 1"/>
-        <img src="./assets/thumb2.png" alt="Thumb 2"/>
-        <img src="./assets/thumb3.png" alt="Thumb 3"/>
-      </div>
-    </section>
-  </main>
+  <div class="container">
+    <header>
+      <img src="./assets/logo.png" alt="Starbucks logo" />
+      <nav class="menu-container">
+        <div class="menu-mobile">
+          <div class="bar"></div>
+          <div class="bar2"></div>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <article>
+        <h1>It's not just Coffee, it's Starbucks</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam, tempora quod officiis atque saepe excepturi. Sunt architecto molestias omnis voluptates dolores, eveniet velit accusantium tempora alias nisi? Necessitatibus aliquam asperiores non, molestias provident facilis fugit ratione quo aut cum?</p>
+      </article>
+      <section>
+        <img src="./assets/img1.png" alt="Starbucks product"/>
+        <div>
+          <img src="./assets/thumb1.png" alt="Thumb 1"/>
+          <img src="./assets/thumb2.png" alt="Thumb 2"/>
+          <img src="./assets/thumb3.png" alt="Thumb 3"/>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>

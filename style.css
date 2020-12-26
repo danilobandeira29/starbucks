@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --ff-roboto: 'Roboto', sans-serif;
+  --bg-pink-dark: rgb(160, 33, 125);
+  --bg-green-regular: rgb(1, 113, 67);
+  --bg-pink-regular: rgb(239, 186, 196);
+  --clr-white: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: var(--ff-roboto);
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  padding: 3rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+.container header nav.menu-container .menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.container header nav.menu-container .menu-mobile .bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-green-regular);
+  margin-bottom: 5px;
+  border-radius: 12px;
+}
+
+.container header nav.menu-container .menu-mobile .bar2 {
+  width: 80%;
+  height: 8px;
+  background: var(--bg-green-regular);
+  border-radius: 12px;
+}
+
+.container header nav.menu-container ul {
+  display: none;
+  opacity: 0;
+}
+
+.container header nav.menu-container.on {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-green-regular);
+}
+
+.container header nav.menu-container.on .menu-mobile {
+  position: absolute;
+  top: 44px;
+  right: 47px;
+}
+
+.container header nav.menu-container.on .menu-mobile .bar,
+.container header nav.menu-container.on .menu-mobile .bar2 {
+  background: var(--clr-white);
+}
+
+.container header nav.menu-container.on .menu-mobile .bar {
+  transform: rotate(45deg) translate(4px);
+}
+
+.container header nav.menu-container.on .menu-mobile .bar2 {
+  width: 100%;
+  transform: rotate(-45deg) translate(9px, -6px);
+}
+
+.container header nav.menu-container.on .active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 1;
+}
+
+.container header nav.menu-container.on .active li{
+  text-align: center;
+}
+
+.container header nav.menu-container.on .active li a {
+  display: block;
+  width: 150px;
+  padding: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
