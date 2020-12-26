@@ -3,7 +3,7 @@ const ulElement = document.querySelector(".menu-container ul");
 
 let scrollBody = true;
 
-menuContainerElement.addEventListener("click", () => {
+menuContainerElement.addEventListener("click", (event) => {
   //pra evitar scroll quando estiver com o menu open
   document.body.style.overflow = scrollBody ? "hidden" : "initial";
 
@@ -12,3 +12,15 @@ menuContainerElement.addEventListener("click", () => {
 
   scrollBody = !scrollBody;
 });
+
+
+const imgElement = document.querySelector("main section .img-container img");
+const backgroundImg = document.querySelector(".img-container .circle");
+
+function changeImg(source) {
+  imgElement.setAttribute("src", source);
+}
+
+function changeBgImg(color) {
+  backgroundImg.style.background = color;
+}
