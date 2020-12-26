@@ -93,6 +93,7 @@ header ul li {
 
 .container header nav.menu-container.on .menu-mobile .bar,
 .container header nav.menu-container.on .menu-mobile .bar2 {
+  transition: all .3s;
   background: var(--clr-white);
 }
 
@@ -120,11 +121,12 @@ header ul li {
 
 .container header nav.menu-container.on .active li a {
   display: block;
-  width: 150px;
+  width: 200px;
   padding: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--clr-white);
+  font-size: 2.5rem;
 }
 
 main article h1 {
@@ -173,5 +175,10 @@ main section .img-container img {
 }
 
 main section div:nth-child(2) img {
+  transition: all .5s;
   cursor: pointer;
+}
+
+main section div:nth-child(2) img:hover {
+  transform: translateY(-20px);
 }
