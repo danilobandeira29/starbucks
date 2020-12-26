@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-family: var(--ff-poppins);
 }
 
@@ -58,7 +58,7 @@ header ul li {
 }
 
 .container header nav.menu-container .menu-mobile .bar {
-  width: 100%;
+  width: 50px;
   height: 8px;
   background: var(--bg-green-regular);
   margin-bottom: 5px;
@@ -67,7 +67,7 @@ header ul li {
 }
 
 .container header nav.menu-container .menu-mobile .bar2 {
-  width: 80%;
+  width: 40px;
   height: 8px;
   background: var(--bg-green-regular);
   border-radius: 12px;
@@ -93,7 +93,7 @@ header ul li {
 .container header nav.menu-container.on .menu-mobile {
   position: absolute;
   top: 44px;
-  right: 47px;
+  right: 30px;
 }
 
 .container header nav.menu-container.on .menu-mobile .bar,
@@ -134,14 +134,15 @@ header ul li {
   font-size: 2.5rem;
 }
 
-main article h1 {
-  font-size: 3.8rem;
+
+main article h1, h2 {
+  font-size: 2.8rem;
   font-weight: normal;
   line-height: 1.2;
 }
 
 main article h1 strong {
-  font-size: 5rem;
+  font-size: 3.6rem;
   color: var(--bg-green-regular);
 }
 
@@ -150,16 +151,18 @@ main article p {
   margin: 1rem 0 2rem;
 }
 
-main article button {
+main article .learn-more {
+  display: block;
   padding: 1.3rem 2.3rem;
+  width: fit-content;
   background: var(--bg-green-regular);
   border-radius: 4rem;
   border: none;
-  font-weight: bold;
   color: var(--clr-white);
   cursor: pointer;
   margin-bottom: 2rem;
   outline: none;
+  text-decoration: none;
 }
 
 main section {
@@ -185,7 +188,7 @@ main section .img-container .circle {
   z-index: -1;
   height: 100%;
   background: var(--bg-green-regular);
-  clip-path: circle(200px at center);
+  clip-path: circle(40% at center);
 }
 
 main section .img-container img {
@@ -193,11 +196,16 @@ main section .img-container img {
   margin-bottom: 2rem;
 }
 
-main section div:nth-child(2) img {
+main section .thumb {
+  display: flex;
+}
+
+main section .thumb img {
   transition: all .5s;
   cursor: pointer;
 }
 
-main section div:nth-child(2) img:hover {
+main section .thumb img:hover,
+main section .thumb img:active {
   transform: translateY(-20px);
 }
