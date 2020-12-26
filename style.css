@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 :root {
-  --ff-roboto: 'Roboto', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;;
   --bg-pink-dark: rgb(160, 33, 125);
   --bg-green-regular: rgb(1, 113, 67);
   --bg-pink-regular: rgb(239, 186, 196);
@@ -20,7 +19,7 @@ html {
 
 body {
   font-size: 1.7rem;
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-poppins);
 }
 
 .container {
@@ -33,6 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 header img {
@@ -82,6 +82,7 @@ header ul li {
   width: 100vw;
   height: 100vh;
   background: var(--bg-green-regular);
+  z-index: 10;
 }
 
 .container header nav.menu-container.on .menu-mobile {
@@ -124,4 +125,53 @@ header ul li {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--clr-white);
+}
+
+main article h1 {
+  font-size: 3.8rem;
+  font-weight: normal;
+}
+
+main article h1 strong {
+  color: var(--bg-green-regular);
+}
+
+main article p {
+  line-height: 1.5;
+  margin: 2rem 0 3rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+main section .img-container .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  background: var(--bg-green-regular);
+  clip-path: circle(200px at center);
+}
+
+main section .img-container img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+main section div:nth-child(2) img {
+  cursor: pointer;
 }
