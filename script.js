@@ -1,9 +1,11 @@
+
 const menuContainerElement = document.querySelector(".menu-container");
+const buttonContainerElement = document.querySelector(".menu-container .menu-mobile");
 const ulElement = document.querySelector(".menu-container ul");
 
 let scrollBody = true;
 
-menuContainerElement.addEventListener("click", (event) => {
+buttonContainerElement.addEventListener("click", () => {
   //pra evitar scroll quando estiver com o menu open
   document.body.style.overflow = scrollBody ? "hidden" : "initial";
 
