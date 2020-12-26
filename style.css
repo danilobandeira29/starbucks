@@ -137,15 +137,29 @@ header ul li {
 main article h1 {
   font-size: 3.8rem;
   font-weight: normal;
+  line-height: 1.2;
 }
 
 main article h1 strong {
+  font-size: 5rem;
   color: var(--bg-green-regular);
 }
 
 main article p {
   line-height: 1.5;
-  margin: 2rem 0 3rem;
+  margin: 1rem 0 2rem;
+}
+
+main article button {
+  padding: 1.3rem 3.8rem;
+  background: var(--bg-green-regular);
+  border-radius: 4rem;
+  border: none;
+  font-weight: bold;
+  color: var(--clr-white);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  outline: none;
 }
 
 main section {
@@ -156,11 +170,11 @@ main section {
 
 main section .img-container {
   width: 100%;
+  max-width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 
 main section .img-container .circle {
