@@ -3,6 +3,7 @@
   --ff-poppins: 'Poppins', sans-serif;;
   --bg-pink-dark: rgb(160, 33, 125);
   --bg-green-regular: rgb(1, 113, 67);
+  --bg-green-dark: rgb(1, 73, 43);
   --bg-pink-regular: rgb(239, 186, 196);
   --clr-white: rgb(255, 255, 255);
 }
@@ -208,4 +209,25 @@ main section .thumb img {
 main section .thumb img:hover,
 main section .thumb img:active {
   transform: translateY(-20px);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-green-regular); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-green-dark);
 }
