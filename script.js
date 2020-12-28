@@ -8,6 +8,7 @@ let scrollBody = true;
 
 function handleMenu() {
   //pra evitar scroll quando estiver com o menu open
+  if(document.documentElement.clientWidth>= 1000) return;
   document.body.style.overflow = scrollBody ? "hidden" : "initial";
 
   menuContainerElement.classList.toggle("on", scrollBody);
