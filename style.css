@@ -6,6 +6,7 @@
   --bg-green-dark: rgb(1, 73, 43);
   --bg-pink-regular: rgb(239, 186, 196);
   --clr-white: rgb(255, 255, 255);
+  --clr-black: rgb(0, 0, 0);
 }
 
 * {
@@ -230,4 +231,91 @@ main section .thumb img:active {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--bg-green-dark);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  .container header nav.menu-container .menu-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .container header nav.menu-container ul {
+    display: flex;
+    opacity: 1;
+    gap: 10px;
+  }
+
+  .container header nav.menu-container ul li a {
+    text-decoration: none;
+    color: var(--clr-black);
+    transition: all .4s;
+
+  }
+
+  .container header nav.menu-container ul li a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 1px;
+    background: transparent;
+    transition: all .3s;
+  }
+
+  .container header nav.menu-container ul li a:hover::after {
+    background: var(--clr-black);
+    width: 100%;
+  }
+
+  main article h1, h2 {
+    font-size: 3.3rem;
+  }
+
+  main article h1 strong {
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .container main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container main article {
+    align-self: center;
+    max-width: 500px;
+  }
+
+  .container main section {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .container main section .img-container {
+    flex: 1;
+    width: 700px;
+  }
+
+  .container main section .circle {
+    clip-path: circle(45% at center);
+  }
+
+  .container main section .thumb {
+    position: absolute;
+    bottom: -150px;
+    left: -250px;
+  }
+
 }
